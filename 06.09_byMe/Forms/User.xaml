@@ -1,0 +1,29 @@
+﻿<Window x:Class="_06._09_byMe.Forms.User"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_06._09_byMe.Forms"
+        mc:Ignorable="d"
+        Title="User" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Margin="5">Укажите имя пользователя</Label>
+                <TextBox Margin="5" MinWidth="150" Name="tbName"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Margin="5">Укажите возраст пользователя</Label>
+                <TextBox Margin="5" MinWidth="150" Name="tbAge"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Margin="5">Укажите пол пользователя</Label>
+                <ComboBox   Margin="5" MinWidth="150" x:Name="cbGender" ></ComboBox>
+            </StackPanel>
+        <Button  x:Name="btAddUser" Margin="5"   HorizontalContentAlignment="Center" Click="btAddUser_Click">Добавиться в БД</Button>
+        <Button x:Name="btDown" Margin="5" HorizontalContentAlignment="Center" Click="btDown_Click">Вернуться в стартовое окно</Button>
+        </StackPanel>
+    </Grid>
+</Window>
